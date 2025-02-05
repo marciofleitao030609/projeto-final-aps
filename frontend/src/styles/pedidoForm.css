@@ -1,0 +1,101 @@
+/* PedidoForm.css */
+
+/* Estilo geral do formulário */
+.pedido-form-container {
+  padding: 1rem;
+  border: 1px solid #2778e0;
+  border-radius: 2px;
+  background-color: #f7fafc;
+}
+
+.pedido-form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.pedido-form-subtitle {
+  font-size: 1.25rem;
+  font-weight: semi-bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para os campos de entrada de dados */
+.input-field {
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+
+.input-field:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+button[type="button"], button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Estilo para botões */
+.pedido-button-adicionar {
+  background-color: #48bb78;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.pedido-button-finalizar {
+  background-color: #4299e1;
+  color: white;
+}
+
+.pedido-button-limpar {
+  background-color: #f56565;
+  color: white;
+}
+
+/* Resumo do Pedido */
+.pedido-summary {
+  margin-top: 1rem;
+}
+
+.pedido-item {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.pedido-item p {
+  margin: 0.5rem 0;
+}
+
+.pedido-total {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Estilos para as listas de opções */
+.pedido-option-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para mensagens de aviso */
+.text-warning {
+  color: #e53e3e;
+  font-weight: bold;
+}
+
+  

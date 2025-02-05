@@ -1,0 +1,163 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background: #fae1dd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #8fdfff;
+  margin-bottom: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #8fdfff;
+  border-radius: 5px;
+  background-color: 8fdfff;
+  color: #333;
+}
+
+input::placeholder {
+  color: #a28a91;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"] {
+  background: #ff8fab;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background: #ff6b81;
+}
+
+button[type="button"] {
+  background: #ffb3c1;
+  color: white;
+}
+
+button[type="button"]:hover {
+  background: #ff758f;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.border {
+  border: 2px solid #ffc2d1;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+/* Ícones decorativos */
+form::before {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* PedidoLista.css */
+
+/* Estilo para o contêiner de pedidos */
+.pedido-container {
+  margin-top: 1rem;
+}
+
+.pedido-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para cada item de pedido */
+.pedido-item {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f7fafc;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para o resumo do pedido */
+.pedido-summary {
+  margin-top: 1rem;
+  background-color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pedido-summary-title {
+  font-size: 1.125rem;
+  font-weight: semi-bold;
+}
+
+/* Estilo para a divisória */
+.divider {
+  border-top: 2px solid #cbd5e0;
+  margin: 0.5rem 0;
+}
+
+/* Estilo para os botões */
+.pedido-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pedido-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  
+}
+
+.pedido-button-finalizar {
+  background-color: #4299e1;
+  color: white;
+}
+
+.pedido-button-limpar {
+  background-color: #f56565;
+  color: white;
+}
+
