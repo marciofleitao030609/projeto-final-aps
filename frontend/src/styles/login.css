@@ -1,0 +1,102 @@
+/* Remove margens e padding padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo azul claro com efeito degradê espelhado */
+body {
+  background: linear-gradient(135deg, #4b4e50, #3e3e46, #26a2cc, #2c81d1);
+  background-size: 300% 300%;
+  animation: gradientBG 120s ease-in-out infinite alternate;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Animação para o fundo degradê */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Cabeçalho centralizado */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pizza-icon {
+  font-size: 40px;
+  color: #ff6600;
+}
+
+.system-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Caixa branca sólida */
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+}
+
+/* Título do login */
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6600;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #a19e9e;
+  font-size: 16px;
+  background: #d4d2d2;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-input:focus {
+  background: #ffffff;
+  border-color: #80c1ff;
+  box-shadow: 0 0 10px rgba(128, 193, 255, 0.8);
+}
+
+/* Botão de login */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(180deg, #e28242, #ff3300);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background: linear-gradient(90deg, #ff3300, #ff6600);
+  box-shadow: 0 4px 10px rgba(255, 102, 0, 0.5);
+}

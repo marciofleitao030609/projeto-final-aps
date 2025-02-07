@@ -1,4 +1,6 @@
 import { usePedidoStore } from "../store/usePedido";
+import "../styles/pedidoLista.css";
+
 
 const PedidoLista = () => {
   const pedidos = usePedidoStore((state) => state.pedidos);
@@ -46,7 +48,7 @@ const PedidoLista = () => {
               {/* Botões de Finalizar e Limpar */}
               <div className="pedido-buttons">
                 <button className="pedido-button pedido-button-finalizar">Finalizar Pedido</button>
-                <button className="pedido-button pedido-button-limpar">Limpar Pedido</button>
+                <button className="pedido-button pedido-button-limpar">Editar Pedido</button>
               </div>
 
             </li>

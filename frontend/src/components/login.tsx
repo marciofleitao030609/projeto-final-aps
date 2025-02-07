@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/login.css"; // Importa o arquivo CSS
+import { FaPizzaSlice } from "react-icons/fa"; // Ícone de pizza
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -15,28 +17,38 @@ const Login = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 p-8">
-      <h2 className="text-2xl font-bold">Login</h2>
-      <input
-        type="email"
-        placeholder="Email"
-        className="border p-2"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Senha"
-        className="border p-2"
-        value={senha}
-        onChange={(e) => setSenha(e.target.value)}
-      />
-      <button className="bg-blue-500 text-white p-2" onClick={handleLogin}>
-        Entrar
-      </button>
+    <div className="page-container">
+      {/* Cabeçalho com título e ícone */}
+      <header className="header">
+        <FaPizzaSlice className="pizza-icon" />
+        <h1 className="system-title">Sistema da Pizzaria</h1>
+      </header>
+
+      {/* Formulário de Login */}
+      <div className="login-container">
+        <h2 className="login-title">Login</h2>
+        <div className="login-form">
+          <input
+            type="email"
+            placeholder="Email"
+            className="login-input"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Senha"
+            className="login-input"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+          />
+          <button className="login-button" onClick={handleLogin}>
+            Entrar
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Login;
-  
