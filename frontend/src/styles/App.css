@@ -1,12 +1,14 @@
+/* Página de Login */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #ffffff;
+  background-color: #f4f7fb; /* Cor de fundo mais neutra */
   color: #333;
   margin: 0;
   padding: 0;
@@ -17,7 +19,7 @@ body {
 }
 
 form {
-  background: #fae1dd;
+  background: #e0f2f1; /* Azul suave */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -27,7 +29,7 @@ form {
 
 h2 {
   text-align: center;
-  color: #8fdfff;
+  color: #00796b; /* Azul escuro */
   margin-bottom: 15px;
 }
 
@@ -35,14 +37,14 @@ input, select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 2px solid #8fdfff;
+  border: 2px solid #00796b; /* Azul escuro */
   border-radius: 5px;
-  background-color: 8fdfff;
+  background-color: #e0f2f1; /* Azul suave */
   color: #333;
 }
 
 input::placeholder {
-  color: #a28a91;
+  color: #607d8b; /* Cinza mais neutro */
 }
 
 button {
@@ -55,21 +57,21 @@ button {
 }
 
 button[type="submit"] {
-  background: #ff8fab;
+  background: #0288d1; /* Azul forte */
   color: white;
 }
 
 button[type="submit"]:hover {
-  background: #ff6b81;
+  background: #0277bd; /* Azul mais escuro */
 }
 
 button[type="button"] {
-  background: #ffb3c1;
+  background: #039be5; /* Azul claro */
   color: white;
 }
 
 button[type="button"]:hover {
-  background: #ff758f;
+  background: #0288d1; /* Azul mais forte */
 }
 
 .flex {
@@ -78,14 +80,14 @@ button[type="button"]:hover {
 }
 
 .border {
-  border: 2px solid #ffc2d1;
+  border: 2px solid #b0bec5; /* Cinza mais neutro */
 }
 
 .rounded {
   border-radius: 5px;
 }
 
-/* Ícones decorativos */
+/* Ícones decorativos no formulário */
 form::before {
   font-size: 40px;
   display: block;
@@ -93,7 +95,7 @@ form::before {
   margin-bottom: 10px;
 }
 
-/* PedidoLista.css */
+/* Estilos para a página de pedidos - PedidoLista.css */
 
 /* Estilo para o contêiner de pedidos */
 .pedido-container {
@@ -108,17 +110,17 @@ form::before {
 
 /* Estilo para cada item de pedido */
 .pedido-item {
-  border: 1px solid #e2e8f0;
+  border: 1px solid #b0bec5; /* Cinza neutro */
   padding: 1rem;
   border-radius: 8px;
-  background-color: #f7fafc;
+  background-color: #fafafa;
   margin-bottom: 1rem;
 }
 
 /* Estilo para o resumo do pedido */
 .pedido-summary {
   margin-top: 1rem;
-  background-color: #e2e8f0;
+  background-color: #eceff1; /* Azul claro neutro */
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -131,7 +133,7 @@ form::before {
 
 /* Estilo para a divisória */
 .divider {
-  border-top: 2px solid #cbd5e0;
+  border-top: 2px solid #cfd8dc; /* Cinza suave */
   margin: 0.5rem 0;
 }
 
@@ -148,16 +150,14 @@ form::before {
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 600;
-  
 }
 
 .pedido-button-finalizar {
-  background-color: #4299e1;
+  background-color: #0288d1; /* Azul forte */
   color: white;
 }
 
 .pedido-button-limpar {
-  background-color: #f56565;
+  background-color: #d32f2f; /* Vermelho escuro */
   color: white;
 }
-

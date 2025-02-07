@@ -7,9 +7,9 @@
 
 /* Fundo azul claro com efeito degradê espelhado */
 body {
-  background: linear-gradient(135deg, #4b4e50, #3e3e46, #26a2cc, #2c81d1);
+  background: linear-gradient(135deg, #4b4e50, #797988, #76c2db, #2c81d1);
   background-size: 300% 300%;
-  animation: gradientBG 120s ease-in-out infinite alternate;
+  animation: gradientBG 20s ease-in-out infinite alternate;
   min-height: 100vh;
   display: flex;
   align-items: center;
